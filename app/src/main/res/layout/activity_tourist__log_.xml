@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tourist_Log_Activity"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvlg"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:text="LOGIN"
+        android:textSize="50dp"
+        android:textAlignment="center"/>
+    <EditText
+        android:id="@+id/loginmane"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/tvlg"
+        android:layout_marginTop="-18dp"
+        android:background="@drawable/login_edittext_style"
+        android:hint="Enter User-id"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/loginpswrd"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/loginmane"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/login_edittext_style"
+        android:hint="Enter Password"
+
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginpswrd"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="29dp"
+        android:textColor="#fff"
+        android:background="@drawable/login_page_button"
+        android:text="LOGin" />
+
+    <TextView
+        android:id="@+id/newuser"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="New User? Sign up"
+        android:layout_below="@id/loginbutton"
+        android:gravity="center"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="17dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_person"
+        android:layout_marginTop="192dp"
+        android:layout_marginLeft="255dp"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_psd"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="255dp"/>
+
+</RelativeLayout>
